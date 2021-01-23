@@ -2,7 +2,7 @@
 # Author: Yolanda Theodorakis
 # Description: Code task 2. Program asks for user to input the number of 
 #              accepted exercises and prints out the grade. Simple code is 
-#              enough, no objects needed.
+#              enough, no objects needed. 
 
 def get_grade ():
     # Asks for user input and changes that to integer
