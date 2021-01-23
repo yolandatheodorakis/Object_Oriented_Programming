@@ -4,7 +4,7 @@
 #              exercises meaning certain grade). Write pseudocode for a 
 #              program where user inputs the number of accepted exercises and 
 #              program prints out the grade. Use informative and readable 
-#              output prints.
+#              output prints. 
 
 #   function get_grade:
 #       ask user to input the number of accepted exercises
