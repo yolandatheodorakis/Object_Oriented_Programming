@@ -43,7 +43,7 @@ class Coin:
         elif random.randint(0, 4) == 4:
             return 'Yen'
 
-    # the set_currency changes the currency
+    # The set_currency changes the currency
     def set_currency (self):
         self.currency = self.generate_currency()
 
