@@ -74,6 +74,9 @@ def main ():
     my_dice.roll()
     my_dice.set_colour()
 
+    # Check if it's my favourite combo
+    my_dice.set_fav_combo()
+
     # Get the dice number and colour and if it's my favourite combo
     print('The dice number is', my_dice.get_number(), 
         'and the colour is', my_dice.get_colour())
