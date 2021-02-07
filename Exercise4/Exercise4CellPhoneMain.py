@@ -4,8 +4,13 @@
 #              attribute values, use mutator methods to change the data 
 #              attribute values). Print out each object’s state (use the 
 #              __str__ method in the cell phone class).
+#              Take the Dice class from your earlier exercises and place that 
+#              to its own file. Then in main function roll a dice and based on 
+#              the result choose the correct cell phone based on the ID. Print 
+#              out the chosen cell phone object’s state.
 
 import Exercise4CellPhoneClass as phone
+import Exercise4DiceClass as dice
 
 def main ():
     # Create new objects from CellPhone class
@@ -47,24 +52,31 @@ def main ():
     cell_phone_6.set_retail_price()
     cell_phone_6.set_id()
 
-    # Print the data
-    print('Here is the data that you provided:')
-    print(cell_phone_1)
+    # Create a dice object
+    my_dice = dice.Dice()
 
-    print('Here is the data that you provided:')
-    print(cell_phone_2)
+    # Roll the dice
+    my_dice.roll()
 
-    print('Here is the data that you provided:')
-    print(cell_phone_3)
-
-    print('Here is the data that you provided:')
-    print(cell_phone_4)
-
-    print('Here is the data that you provided:')
-    print(cell_phone_5)
-
-    print('Here is the data that you provided:')
-    print(cell_phone_6)
+    # Print the chosen cell phone's state
+    if my_dice.get_number() == 1:
+        print('Here is the data that you provided:')
+        print(cell_phone_1)
+    elif my_dice.get_number() == 2:
+        print('Here is the data that you provided:')
+        print(cell_phone_2)
+    elif my_dice.get_number() == 3:
+        print('Here is the data that you provided:')
+        print(cell_phone_3)
+    elif my_dice.get_number() == 4:
+        print('Here is the data that you provided:')
+        print(cell_phone_4)
+    elif my_dice.get_number() == 5:
+        print('Here is the data that you provided:')
+        print(cell_phone_5)
+    elif my_dice.get_number() == 6:
+        print('Here is the data that you provided:')
+        print(cell_phone_6)
 
     
 main()
