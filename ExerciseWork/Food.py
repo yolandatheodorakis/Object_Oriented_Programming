@@ -1,4 +1,4 @@
-# File  name: Food.py
+# File name: Food.py
 # Author: Yolanda Theodorakis
 # Description: Food class
 
@@ -8,8 +8,8 @@ import pygame as pg
 class Food:
     # Initialize the states
     def __init__(self):
-        self.x_position = 500 / 2
-        self.y_position = 500 / 4
+        self.x_position = 700 / 2
+        self.y_position = 700 / 4
         self.width = 10
         self.height = 10
         self.color = pg.Color(255, 153, 255)
@@ -25,5 +25,5 @@ class Food:
 
     # Returns a new position for the food
     def new_position(self):
-        self.x_position = random.randint(0, 500 - self.width)
-        self.y_position = random.randint(0, 500 - self.height)
+        self.x_position = random.randint(0, 700 - self.width)
+        self.y_position = random.randint(0, 700 - self.height)
